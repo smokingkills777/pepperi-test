@@ -9,6 +9,7 @@ body {
 }
 h1 {
     margin: 0;
+    color: #2491b3;
 }
 label {
     margin-bottom: 5px;
@@ -17,7 +18,14 @@ label {
 }
 button {
     margin-left: 30px;
+    width: 100px;
+    height: 25px;
     cursor: pointer;
+    background-color: #2491b3;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    user-select: none;
 }
 input:hover,
 input:focus,
@@ -26,12 +34,6 @@ textarea:hover,
 textarea:focus,
 textarea:active {
     outline: none;
-}
-li {
-    list-style-type: none;
-    font-size: 14px;
-    font-weight: normal;
-    cursor: pointer;
 }
 
 
@@ -83,6 +85,12 @@ li {
     flex-direction: column;
     width: 60%;
 }
+.app__input input {
+    height: 25px;
+    padding: 0 3px;
+    border: 2px solid #2491b3;
+    border-radius: 5px;
+}
 @media screen and (max-width: 426px) {
     .app__input,
     .app__list {
@@ -98,9 +106,7 @@ li {
     display: flex;
     align-items: end;
 }
-#button-add {
-    width: 50px;
-}
+
 @media screen and (max-width: 426px) {
     #button-add {
         margin: 20px auto 0;
@@ -123,10 +129,17 @@ li {
 #app__values {
     height: 200px;
     width: 100%;
-    border: 1px solid rgb(133, 133, 133);
+    border: 2px solid #2491b3;
+    border-radius: 5px;
     padding: 5px;
     font-size: 14px;
     font-weight: normal;
+}
+.list__item {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
 }
 .item__selected {
     background-color: #2491b3;
