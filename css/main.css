@@ -112,7 +112,7 @@ textarea:active {
     user-select: none;
     transition: all .3s ease-in-out;
 }
-@media(hover: hover) and (pointer: fine) {
+@media (pointer: fine) {
     .app__button:hover {
         background-color: #fff;
         color: var(--color-blue);
