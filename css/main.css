@@ -112,10 +112,12 @@ textarea:active {
     user-select: none;
     transition: all .3s ease-in-out;
 }
-.app__button:hover {
-    background-color: #fff;
-    color: var(--color-blue);
-    border: 1px solid var(--color-blue);
+@media(hover: hover) and (pointer: fine) {
+    .app__button:hover {
+        background-color: #fff;
+        color: var(--color-blue);
+        border: 1px solid var(--color-blue);
+    }
 }
 
 /* --- ADD button --- */
