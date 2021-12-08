@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // 'Show XML' button controller
     buttonShowXml.addEventListener('click', () => {
         isShownXml = !isShownXml;
-
         if (isShownXml) {
             buttonShowXml.innerText = 'Show Text';
 
@@ -64,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
             buttonShowXml.innerText = 'Show XML';
             updateValues(userValues);
         }
-
     });
 
     function updateValues(obj) {
